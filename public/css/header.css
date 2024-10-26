@@ -32,6 +32,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}
+
 .active{
   font-weight: bold !important;
 }
