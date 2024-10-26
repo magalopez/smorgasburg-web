@@ -1,0 +1,37 @@
+.main-header {
+  background: #c3c3c3;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.auth-links a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  width: 100px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.active{
+  font-weight: bold !important;
+}
