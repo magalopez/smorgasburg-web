@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedores - Smorgasburg Lima</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/vendors.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="Smorgasburg Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="/">Inicio</a>
+                <a href="/locations">Ubicaciones</a>
+                <a href="/vendors" class="active">Vendedores</a>
+            </div>
+            <div class="auth-links"></div>
+        </nav>
+    </header>
+
+    <main class="vendors-main">
+        <section class="vendors-hero">
+            <div class="hero-content">
+                <h1>Nuestros Vendedores</h1>
+                <p>Descubre sabores increíbles de nuestra selección de vendedores</p>
+            </div>
+        </section>
+
+        <section class="vendors-container">
+            <div class="filters">
+                <h2>Filtrar por Categoría</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="peruana">Peruana</button>
+                    <button class="filter-btn" data-category="marina">Marina</button>
+                    <button class="filter-btn" data-category="criolla">Criolla</button>
+                    <button class="filter-btn" data-category="fusion">Fusión</button>
+                    <button class="filter-btn" data-category="internacional">Internacional</button>
+                    <button class="filter-btn" data-category="postres">Postres</button>
+                    <button class="filter-btn" data-category="bebidas">Bebidas</button>
+                </div>
+            </div>
+
+            <div class="vendors-grid">
+                <!-- Vendors agregados dinámicamente por JavaScript -->
+            </div>
+
+            <template id="vendor-template">
+                <div class="vendor-card">
+                    <div class="vendor-image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="vendor-info">
+                        <h3 class="vendor-name"></h3>
+                        <p class="vendor-category"></p>
+                        <p class="vendor-description"></p>
+                        <div class="vendor-locations"></div>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contáctanos</h4>
+                <p>Correo: info@smorgasburg.pe</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Boletín Informativo</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ingresa tu correo">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Smorgasburg Lima. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/vendors.js"></script>
+</body>
+</html>
